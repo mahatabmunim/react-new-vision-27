@@ -1,21 +1,60 @@
 import './App.css'
+import Todo from './Todo'
 
 function App() {
   return (
     <>       
           <h1>Get started</h1>
-          <Person></Person>
+          <Todo Task='practice coding' time='5.00'></Todo>
+          <Todo Task='take a shower' ></Todo>
+          <Todo Task='take a shower'></Todo>
+          {/* <Person></Person>
           <Std></Std>
           <Students></Students>
           <Student name='Jahirul Islam' gpa="3.43"></Student>
           <Student name='Mahatab' gpa="3.76"></Student>
           <Student name='Munim' gpa="3.73"></Student>
-          <Student></Student>
+          <Student></Student> */}
+          {/* <Developer Language="Java" Expreance= "4 years"></Developer>
+          <Developer Language="Python" Expreance="5 years"></Developer> */}
+
+          {/* <Basa name="Amader Poribar" KalarNam="Rekha Banu"></Basa>
+          <Basa name="Amader Poribar" KalarNam="Rekha"></Basa> */}
+
+          <Munim name="Mahatab" role="Frontend Developer" button="View Profile"></Munim>
+          <Munim name="Mahatab" role="Frontend Developer" button="View Profile"></Munim>
+
     </>
   )
 }
 
+function Munim(props){
+  return(
+    <div className='profile-card'>
+      <h2>Name: {props.name}</h2>
+      <p>Role: {props.role}</p>
+      <button>{props.button}</button>
+    </div>
+  )
+}
 
+function Basa(props){
+  return(
+    <div className='student'>
+      <h4>Basar Nam: {props.name}</h4>
+      <p>Buar nam: {props.KalarNam}</p>
+    </div>
+  )
+}
+
+function Developer(props){
+  return(
+    <div className='student'>
+      <h4>Programmming Language: {props.Language}</h4>
+      <h4>Expreance: {props.Expreance}</h4>
+    </div>
+  )
+}
 
 
 
@@ -73,4 +112,6 @@ function Students(){
     </div>
   )
 }
+
+
 export default App
