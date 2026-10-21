@@ -9,9 +9,9 @@
 //     )
 // }
 
-function Todo(){
-    return <li>Work: </li>
-}
-export default Todo;
+// function Todo(){
+//     return <li>Work: </li>
+// }
+// export default Todo;
 
-const {Task,time}={ Task: 'Take a showers', time: '4.43'}
+// const {Task,time}={ Task: 'Take a showers', time: '4.43'}
